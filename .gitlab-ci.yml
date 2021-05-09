@@ -2,10 +2,8 @@
 # Full project: https://gitlab.com/pages/plain-html
 pages:
   stage: deploy
-  tags: 
-    - html
-    - pages
-
+  tags:
+   - pages
   script:
   - mkdir .public
   - cp -r dist/* .public
@@ -15,3 +13,4 @@ pages:
     - public
   only:
   - master
+
